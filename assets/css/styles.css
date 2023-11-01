@@ -39,6 +39,23 @@ a {
     opacity: 0.9;
 }
 
+
+.heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.17;
+}
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26; /* 126.316% */
+}
+
 .main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -110,7 +127,7 @@ a {
 
 /* *========= Hero========== */
 .hero {
-    padding-top: 56px;
+    padding: 56px 0 65px;
     background: #fffcf4;
 }
 
@@ -126,6 +143,7 @@ a {
 
 .hero .media-block .img {
     width: 470px;
+    vertical-align: bottom;
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
@@ -136,7 +154,7 @@ a {
     right: 0;
     bottom: 48px;
     width: 270px;
-    padding: 28px 24px;
+    padding: 24px;
     background: #ffffff;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
@@ -144,6 +162,7 @@ a {
 
 .hero-summary .item {
     display: flex;
+    align-items: center;
 }
 
 .hero-summary .item + .item {
@@ -189,15 +208,6 @@ a {
 .hero .content-block {
     width: 52%;
     padding: 64px 0 0 130px;
-}
-
-.hero .heading {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 5.8rem;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: #171100;
 }
 
 .hero .desc {
@@ -256,4 +266,36 @@ a {
     font-size: 4.4rem;
     line-height: 1.23;
     color: #171100;
+}
+
+/* ========Popular========= */
+
+.popular {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.popular .heading {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-top .desc {
+    width: 458px;
+    margin-top: 16px;
+    color: #5F5B53;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
 }
