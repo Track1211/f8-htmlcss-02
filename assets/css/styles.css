@@ -418,13 +418,22 @@ a {
   padding: 96px 0;
 }
 
+.feedback-list {
+  overflow: hidden;
+  display: flex;
+}
+
 .feedback-item {
     display: flex;
+    flex-shrink: 0;
+    width: 100%;
 }
 
  .feedback-item .avatar {
   width: 72px;
   height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
   flex-shrink: 0;
 }
 
@@ -447,8 +456,22 @@ a {
 }
 
 .feedback-item .info .dots {
-    margin-top: 28px;
-    cursor: pointer;
+  display: flex;
+  margin-top: 28px;
+}
+
+.feedback-item .dot {
+  margin-right: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+
+.feedback-item .dot.active {
+  background: #ffb900;
+  cursor: default;
 }
 
 .feedback-item .content {
@@ -463,3 +486,4 @@ a {
     font-weight: 400;
     line-height: 1.54; /* 153.846% */
 }
+
