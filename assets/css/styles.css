@@ -64,6 +64,21 @@ a {
     margin-right: auto;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2 ;
+}
+
+.break-all {
+    word-break: break-all ;
+}
+
 /* Header */
 .header {
     background: #fffcf4;
@@ -341,8 +356,9 @@ a {
     justify-content: space-between;
 }
 
-.popular .course-item .title a{
+.popular .course-item .title a {
     color: #171100;
+    padding-right: 6px;
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 600;
